@@ -37,7 +37,7 @@ The transcriptome is the set of a cell's mRNA molecules. The transcriptome origi
 
 Microarray technology — the quantitative, sequence-specific hybridization of labelled nucleotides in chip-format — was the first domain of "high-throughput biology". Today, it has largely been replaced by [RNA-seq](https://en.wikipedia.org/wiki/RNA-Seq): quantification of transcribed mRNA by high-throughput sequencing and mapping reads to genes. Quantifying gene expression levels in a tissue-, development-, or response-specific way has yielded detailed insight into cellular function at the molecular level, with recent results of single-cell sequencing experiments adding a new level of precision. But not all transcripts are mapped to genes: we increasingly realize that the transcriptome is not merely a passive buffer of expressed information on its way to be translated into proteins, but contains multiple levels of complex, regulation through hybridization of small nuclear RNAs[(2015) The noncoding explosion. Nat Struct Mol Biol 22:1. (pmid: 25565024) <br>Jarvis & Robertson (2011) The noncoding universe. BMC Biol 9:52. (pmid: 21798102)].
 
-NCBI's GEO database stores expression data and experiment matadata and makes it publicly available.
+NCBI's GEO database stores expression data and experiment metadata and makes it publicly available.
 
 `r task_counter <- task_counter + 1`
 ## Task `r task_counter`

@@ -42,14 +42,14 @@ BIN-FUNC-Databases (Molecular Function Databases)<br>
 BIN-PDB (The RCSB-PDB Structure Database)<br>
 
 `r task_counter <- task_counter + 1`
-## Task `r task_counter`
+## Task `r task_counter` - Data integration
 
 ```{block, type="rmd-task"}
 Read the introductory notes on [concepts and approaches to data integration in bioinformatics](boris_docs/BIN-Data_integration.pdf).
 ```
 
 `r task_counter <- task_counter + 1`
-## Task `r task_counter`
+## Task `r task_counter` - Uniprot mapping service
  
 ```{block, type="rmd-task"}
   * Visit the [UniProt ID mapping service](https://www.uniprot.org/mapping/), enter NP_010227 into the identifier field, select options from **RefSeq Protein** to **UniProtKB** and click Go.
@@ -78,7 +78,7 @@ Read the introductory notes on [concepts and approaches to data integration in b
 ```{block, type="rmd-task"}
   * The biomartr bioconductor package is a second-generation R interface to BioMart that extends the biomaRt package. It has a good quick start introduction to "Functional Annotation".
 
-  * Navigate to [https://www.bioconductor.org/packages/devel/bioc/vignettes/biomaRt/inst/doc/biomaRt.html](https://www.bioconductor.org/packages/devel/bioc/vignettes/biomaRt/inst/doc/biomaRt.html)
+  * Navigate to [https://bioconductor.org/packages/release/bioc/html/biomaRt.html](https://bioconductor.org/packages/release/bioc/html/biomaRt.html)
   * Work through the tutorial.
 ```
 

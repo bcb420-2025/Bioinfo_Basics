@@ -36,7 +36,7 @@ This unit builds on material covered in the following prerequisite units:
 Yeast happens to have a very well maintained **model organism database** - a Web resource dedicated to Saccharomyces cerevisiae. Where such dedicated resources are available, they are very useful for the community. For the general case however, we need to work with one of the large, general data providers - the NCBI and the EBI. But in order to get a sense of the type of data that is available, let's explore the SGD database.
 
 `r task_counter <- task_counter + 1`
-## Task `r task_counter`
+## Task `r task_counter` - SGD
 
 ```{block, type="rmd-task"}
 
@@ -63,7 +63,7 @@ You will notice that some of this information relates to the molecule itself, an
 If we would be working on yeast, most data we need is right here: curated, kept current and consistent, referenced to the literature and ready to use. But if you are working on a different species - some "MYSPE"- you need to integrate data yourself, from data sources such as the NCBI, or UniProt. The upside is that most of the information like this is available for many, many species. The downside is that you have to integrate information from many different sources essentially "by hand".
 
 `r task_counter <- task_counter + 1`
-## Task `r task_counter`
+## Task `r task_counter` - Gene lists
 
 ```{block, type="rmd-task"}
   * Explore the download section of the Database. Some of these offerings will come up in later learning units.
@@ -88,7 +88,7 @@ Jeanquartier et al. (2015) Integrated web visualizations for protein-protein int
 The online resource that comes out as the best is the one at the [STRING database](https://string-db.org/cgi/input.pl).
 
 `r task_counter <- task_counter + 1`
-## Task `r task_counter`
+## Task `r task_counter` - STRING
 
 ```{block, type="rmd-task"}
   * Review:

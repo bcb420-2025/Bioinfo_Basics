@@ -39,34 +39,34 @@ The [NCBI (National Center for Biotechnology Information)](https://www.ncbi.nlm.
 In this unit we explore some of the offerings of the NCBI that can contribute to our objective of studying a particular gene in an organism of interest.
 
 `r task_counter <- task_counter + 1`
-## Task `r task_counter`
+## Task `r task_counter` - NCBI Intro
 
 ```{block, type="rmd-task"}
 
   * Read the introductory article on NCBI database resources:
 
-NCBI Resource Coordinators (2019) Database Resources of the National Center for Biotechnology Information. Nucleic Acids Res 47:D23-D28. [(pmid: 27899561)](https://www.ncbi.nlm.nih.gov/pubmed/30395293)<br>
-[PubMed](https://www.ncbi.nlm.nih.gov/pubmed/30395293) 
+NCBI Resource Coordinators (2021) Database Resources of the National Center for Biotechnology Information. 2020 Jan 8;48(D1):D9-D16. [(pmid: 31602479)](https://pubmed.ncbi.nlm.nih.gov/31602479/)<br>
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/31602479/) 
 ```
  
 ## Entrez
 
 `r task_counter <- task_counter + 1`
-## Task `r task_counter`
+## Task `r task_counter` - Basic search
 
 ```{block, type="rmd-task"}
 
 **Remember to document your activities as lab-notes on your Wiki.**
 
   * Access the NCBI website at http://www.ncbi.nlm.nih.gov/ [If you find this URL hard to remember, consider the acronyms:<br>ncbi.nlm.nih.gov<br>NCBI: National Center for Biotechnology Information<br>NLM: National Library of Medicine<br>NIH: National Institutes of Health<br>GOV: the US GOVernment top-level domain]
-  * In the search bar, enter mbp1 and click Search.
+  * In the search bar, enter *mbp1* and click Search.
   * On the resulting page, look for the Protein section and click on the link. What do you find?
 ```
 
-The result page of your search in "All Databases" is the "Global Query Result Page" of the Entrez system. If you follow the "Protein" link, you get taken to the more than 610 sequences in the NCBI Protein database that contain the keyword "mbp1". But when you look more closely at the results, you see that the result is quite non-specific: searching only by keyword retrieves a multiubiquitin chain binding protein in Arabidopsis, myrosinase binding proteins, bacterial mannose binding proteins, a Saccharomyces protein (perhaps one that we are actually interested in), maltose binding proteins, myelin basic proteins - and much more. There must be a more specific way to search, and indeed there is. Time to read up on the Entrez system.
+The result page of your search in "All Databases" is the "Global Query Result Page" of the Entrez system. If you follow the "Protein" link, you get taken to the more than 3700 sequences in the NCBI Protein database that contain the keyword "mbp1". But when you look more closely at the results, you see that the result is quite non-specific: searching only by keyword retrieves a multiubiquitin chain binding protein in Arabidopsis, myrosinase binding proteins, bacterial mannose binding proteins, a Saccharomyces protein (perhaps one that we are actually interested in), maltose binding proteins, myelin basic proteins - and much more. There must be a more specific way to search, and indeed there is. Time to read up on the Entrez system.
 
 `r task_counter <- task_counter + 1`
-## Task `r task_counter`
+## Task `r task_counter` - Advanced search
 
 ```{block, type="rmd-task"}
 
@@ -82,7 +82,7 @@ The result page of your search in "All Databases" is the "Global Query Result Pa
 
 And you should know that these filters are in part database specific, i.e. not all of them will work in all databases.
 
-Don't skip this part, you should know the more common options and how to find the others. It would be great to have a synopsis of the important fields for reference, wouldn't it? We have started building one on the Student Wiki ([A synopsis of Entrez codes](http://steipe.biochemistry.utoronto.ca/abc/students/index.php/Entrez)). Currently, I think it lacks structure, and examples. Contributors and editors welcome!
+Don't skip this part, you should know the more common options and how to find the others. 
 ```
 
 Keyword and organism searches are pretty universal, but apart from that, each NCBI database has its own set of specific fields. You can access the keywords via the Advanced Search interface of any of the database pages.
@@ -101,7 +101,7 @@ Mbp1[protein name] AND
  "Saccharomyces cerevisiae"[organism]
 ```
 
-This finds two entries in the Protein database. Follow the link to the result CAA98618.1—a data record in Genbank Flat File (GFF) format^[If there is only a single match, you will be been taken directly to the page.]. The database identifier CAA98618.1 tells you that this is a record in the GenPept database. There are actually several, identical versions of this sequence in the NCBI's holdings. A link to the ["Identical Protein Groups"](https://www.ncbi.nlm.nih.gov/ipg/258763) Database near the top of the record shows you what these are:
+This finds three entries in the Protein database. Follow the link to the result CAA98618.1—a data record in Genbank Flat File (GFF) format^[If there is only a single match, you will be been taken directly to the page.]. The database identifier CAA98618.1 tells you that this is a record in the GenPept database. There are actually several, identical versions of this sequence in the NCBI's holdings. A link to the ["Identical Protein Groups"](https://www.ncbi.nlm.nih.gov/ipg/258763) Database near the top of the record shows you what these are:
 
 Some of the sequences represent duplicate entries of the same gene (Mbp1) in the same strain (S288c) of the same species (S. cerevisiae). In particular:
 
@@ -117,7 +117,7 @@ Note all the .1 suffixes of the sequence identifiers. These are version numbers.
   1. When searching, or for general use, you can (and should) **omit the version number**, i.e. use NP_010227 or P39678 not NP_010227.1 resp. P39678.1. This way the database system will resolve the identifier to the most current, highest version number (unless you want the older one, of course).
 
 `r task_counter <- task_counter + 1`
-## Task `r task_counter`
+## Task `r task_counter` - NCBI Details
 
 ```{block, type="rmd-task"}
 
@@ -139,7 +139,7 @@ As we see, this is a good start page to explore all kinds of databases at the NC
 Arguably one of the most important databases in the life sciences is PubMed and this is a good time to look at PubMed in a bit more detail.
 
 `r task_counter <- task_counter + 1`
-## Task `r task_counter`
+## Task `r task_counter` - Pubmed
 
 ```{block, type="rmd-task"}
   * Return back to the [MBP1 RefSeq record](https://www.ncbi.nlm.nih.gov/protein/NP_010227.1.

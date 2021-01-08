@@ -40,17 +40,6 @@ This unit builds on material covered in the following prerequisite units:
 
 [BIN-Abstractions (Abstractions for Bioinformatics)](#abstractions)
 
- 
-
-## Evaluation
-
-This learning unit can be evaluated for a maximum of 6 marks. If you want to submit the tasks for this unit for credit:
-
-  * Create a new page on the student Wiki as a subpage of your User Page.
-  * There are a number of tasks in which you are explicitly asked you to submit code or other text for credit. Put all of these submission on this one page.
-When you are done with everything, add the following category tag to the end of page:[[Category:EVAL-BIN-Storing_data]].
-  * **Once the page has been saved with this tag, it is considered "submitted". Do not change your submission after this tag has been added. The page will be marked and the category tag will be removed by the instructor.**
-
 `r task_counter <- task_counter + 1`
 ## Task `r task_counter`
 
@@ -123,15 +112,14 @@ There are two major downsides to spreadsheets. For one, complex queries need pro
 
 However, just because it was built for business applications, and designed for use by office assistants, does not mean it is intrinsically unsuitable for our domain. It's important to be pragmatic, not dogmatic, when choosing tools: choose according to your real requirements. Sometimes "quick and dirty" is just fine, because quick.
 
-
+Excel also has a nasty habit of changing gene names (for example, Sept14) into dates.  So much so that it is recognized as a widespread issue in many publications.  [Gene name errors are widespread in the scientific literature](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7).
  
 ## R
 
-R can keep complex data in data frames and lists. If we do data analysis with R, we have to load the data first. We can use any of the read.table() functions for structured data, read lines of raw text with readLines(), or slurp in entire files with scan(). Convenient packages exist to parse structured data like XML or JSON and import it. But we could also keep the data in an R object in the first place that we can read from disk, analyze, modify, and write back. In this case, R becomes our database engine.
+**R** can keep complex data in data frames and lists. If we do data analysis with **R**, we have to load the data first. We can use any of the read.table() functions for structured data, read lines of raw text with readLines(), or slurp in entire files with scan(). Convenient packages exist to parse structured data like XML or JSON and import it. But we could also keep the data in an **R** object in the first place that we can read from disk, analyze, modify, and write back. In this case, R becomes our database engine.
 
+Sample construction of an R database table as a dataframe:
 ```{r}
-# Sample construction of an R database table as a dataframe
- 
 # Data for the Mbp1 protein
 proteins <- data.frame(
     name     = "Mbp1",
@@ -164,8 +152,8 @@ proteins <- data.frame(
     stringsAsFactors = FALSE)
 ```
 
+Add data for the Swi4 protein
 ```{r}
-# add data for the Swi4 protein
 proteins <- rbind(proteins,
                   data.frame(
     name     = "Swi4",
@@ -204,52 +192,48 @@ proteins <- rbind(proteins,
     )
 ```
 
+how many proteins?
 ```{r}
-# how many proteins?
 nrow(proteins)
 ```
- 
+
+what are their names?
 ```{r}
-#what are their names?
 proteins[,"name"]
 ```
 
- 
+how many do not have an Ankyrin domain?
 ```{r}
-# how many do not have an Ankyrin domain?
 sum(proteins[,"Ankyrin"] == "")
 ```
 
+save it to file
 ```{r}
-# save it to file
 save(proteins, file="proteinData.Rda")
 ```
  
-
+delete it from memory
 ```{r}
-# delete it from memory
 rm(proteins)
 ```
  
+check...
 ```{r}
-# check...
 if(!exists("proteins")){
   paste("Error: object 'proteins' not found")
-}  # ... yes, it's gone
+}  
 ```
 
+... yes, it's gone
+
+Read it back in:
 ```{r}
- 
-# read it back in:
 load("proteinData.Rda")
 ```
- 
-```{r}
-# did this work?
-sum(proteins[,"seqLen"])   # 1926 amino acids
 
- 
-# [END]
+did this work?
+```{r}
+sum(proteins[,"seqLen"])   # 1926 amino acids
 ```
 
 The third way to use **R** for data is to connect it to a "real" database:
@@ -330,16 +314,9 @@ To actually implement the data model in **R** we will create the tables as data 
 ```
 
  
-
- 
-
-
 ## Further reading, links and resources
   * [Database normalization](https://en.wikipedia.org/wiki/Database_normalization)
   * [Overview of data model types (Lucidchart)](https://www.lucidchart.com/pages/database-diagram/database-models)
-
- 
-
 
  
 **If in doubt, ask!**<br>
