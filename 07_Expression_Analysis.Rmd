@@ -34,7 +34,7 @@ The Central Dogma: Regulation of transcription and translation; protein biosynth
 
 ```{block, type="rmd-task"}
 Read the introductory notes on [measuring and analysing gene expression levels](boris_docs/BIN-EXPR-Analysis.pdf).
-````
+```
 
 ## Self-evaluation
 

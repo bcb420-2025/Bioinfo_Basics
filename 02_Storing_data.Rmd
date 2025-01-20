@@ -305,10 +305,10 @@ To actually implement the data model in **R** we will create the tables as data 
 
 ```{block, type="rmd-task"}
 
-  * Open RStudio and load the ABC-units R project. If you have loaded it before, choose File → Recent projects → ABC-Units. If you have not loaded it before, follow the instructions in the [RPR-Introduction unit](http://steipe.biochemistry.utoronto.ca/abc/index.php/RPR-Introduction).
+  * Open RStudio and load the ABC-units R project. If you have loaded it before, choose File → Recent projects → ABC-Units. If you have not loaded it before, follow the instructions in the [RPR-Introduction unit](https://github.com/hyginn/ABC-units/blob/master/RPR-Introduction.R).
   * Choose Tools → Version Control → Pull Branches to fetch the most recent version of the project from its GitHub repository with all changes and bug fixes included.
   * Type init() as requested.
-  * Open the file BIN-Storing_data.R and follow the instructions.
+  * Open the file [BIN-Storing_data.R](https://github.com/hyginn/ABC-units/blob/master/BIN-Storing_data.R) and follow the instructions.
  
 **Note**: take care that you understand all of the code in the script. Evaluation in this course is cumulative and you may be asked to explain any part of code.
 ```

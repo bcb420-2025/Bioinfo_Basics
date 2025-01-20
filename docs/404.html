@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Bioinformatics Databases | BCB420 - Computational System Biology</title>
+  <title>Page not found | BCB420 - Computational System Biology</title>
   <meta name="description" content="Prerequisite work for U of T course BCB420 - Computational System Biology" />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 Bioinformatics Databases | BCB420 - Computational System Biology" />
+  <meta property="og:title" content="Page not found | BCB420 - Computational System Biology" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Prerequisite work for U of T course BCB420 - Computational System Biology" />
   <meta name="github-repo" content="bcb420-2020/Bioinfo_Basics" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Bioinformatics Databases | BCB420 - Computational System Biology" />
+  <meta name="twitter:title" content="Page not found | BCB420 - Computational System Biology" />
   
   <meta name="twitter:description" content="Prerequisite work for U of T course BCB420 - Computational System Biology" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="storing-data.html"/>
-<link rel="next" href="ncbi-services.html"/>
+
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -328,98 +328,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="bioinfo-databases" class="section level1 hasAnchor" number="4">
-<h1><span class="header-section-number">Chapter 4</span> Bioinformatics Databases<a href="bioinfo-databases.html#bioinfo-databases" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>(Database principles for bioinformatics)</p>
-<div id="overview-2" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> Overview<a href="bioinfo-databases.html#overview-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="abstract" class="section level3 hasAnchor" number="4.1.1">
-<h3><span class="header-section-number">4.1.1</span> Abstract:<a href="bioinfo-databases.html#abstract" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Large, scalable, multi-user database systems require a fair amount of technology underneath the hood. In particular, they need to fulfill the ACID requirements that ensure database integrity. This unit introduces the principles, and then moves onto an overview of current bioinformatics databases, and Web services.</p>
-</div>
-<div id="objectives-2" class="section level3 hasAnchor" number="4.1.2">
-<h3><span class="header-section-number">4.1.2</span> Objectives:<a href="bioinfo-databases.html#objectives-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>This unit will:</p>
-<ul>
-<li>describes construction principles for database systems;</li>
-<li>mentions some general aspects of dtabase use in bioinformatics;</li>
-<li>explores the current NAR database and Web service issues.</li>
-</ul>
-<p>###Outcomes:</p>
-<p>After working through this unit you:</p>
-<ul>
-<li>can define the four ACID requirements for tranactional integrity of databases;</li>
-<li>are familar with a spectrum of database and Web service offerings in bioinformatics.</li>
-</ul>
-</div>
-<div id="deliverables-2" class="section level3 hasAnchor" number="4.1.3">
-<h3><span class="header-section-number">4.1.3</span> Deliverables:<a href="bioinfo-databases.html#deliverables-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>Time management</strong>: Before you begin, estimate how long it will take you to complete this unit. Then, record in your course journal: the number of hours you estimated, the number of hours you worked on the unit, and the amount of time that passed between start and completion of this unit.</p>
-<p><strong>Journal</strong>: Document your progress in your Course Journal. Some tasks may ask you to include specific items in your journal. Don’t overlook these.</p>
-<p><strong>Insights</strong>: If you find something particularly noteworthy about this unit, make a note in your insights! page.</p>
-</div>
-<div id="prerequisites-2" class="section level3 hasAnchor" number="4.1.4">
-<h3><span class="header-section-number">4.1.4</span> Prerequisites:<a href="bioinfo-databases.html#prerequisites-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>This unit builds on material covered in the following prerequisite units:</p>
-<p><a href="storing-data.html#storing-data">BIN-Storing_data (Storing Data))</a></p>
-<p>In this unit we develop the technical context of bioinformatics databases and get a perspective on the multitude of data offerings in the field. Data and service offerings have no clearly defined boundaries, and many sites offer a mix of both. Thus we explore current Web services as well to define the landscape.</p>
-</div>
-</div>
-<div id="task-4" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Task 4<a href="bioinfo-databases.html#task-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="rmd-task">
-<ul>
-<li>
-Read the introductory notes on <a
-href="./boris_docs/BIN-Databases.pdf">construction principles for large,
-multi-user, scalable database systems</a>.
-</li>
-<li>
-Visit the current <a
-href="https://academic.oup.com/nar/issue/49/D1">Database Issue of
-NAR</a> and browse the titles.
-</li>
-<li>
-Read the editorial article in this issue: Galperin et al. (2017) The
-24th annual Nucleic Acids Research database issue: a look back and
-upcoming changes. Nucleic Acids Res 45:D1-D11. (pmid: 28053160) [ <a
-href="https://www.ncbi.nlm.nih.gov/pubmed/28053160">PubMed</a> ][ <a
-href="https://academic.oup.com/nar/article/45/D1/D1/2770636">DOI</a> ]
-[Abstract]
-</li>
-<li>
-Visit the current <a
-href="https://academic.oup.com/nar/issue/49/W1">Web Service Issue of
-NAR</a> and browse the titles. Read the editorial article on this
-issue.
-</li>
-</ul>
-</div>
-</div>
-<div id="further-reading-links-and-resources-1" class="section level2 hasAnchor" number="4.3">
-<h2><span class="header-section-number">4.3</span> Further reading, links and resources<a href="bioinfo-databases.html#further-reading-links-and-resources-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>If in doubt, ask!</strong><br>
-If anything about this learning unit is not clear to you, do not proceed blindly but ask for clarification. Post your question on the course mailing list: others are likely to have similar problems. Or send an email to your instructor.</p>
-
-<div class="rmd-original-history">
-<br><strong>Author</strong>: Boris Steipe <a href="mailto:boris.steipe@utoronto.ca" class="email">boris.steipe@utoronto.ca</a> <br>
-<strong>Created</strong>: 2017-08-05<br>
-<strong>Modified</strong>: 2017-10-01<br>
-Version: 1.0<br>
-<strong>Version history</strong>:<br>
-1.0 Completed to first live version<br>
-0.1 First stub<br>
-</div>
-
-</div>
+<div id="page-not-found" class="section level1">
+<h1>Page not found</h1>
+<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
+<p>You may want to try searching to find the page's new location, or use
+the table of contents to find the page you are looking for.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="storing-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ncbi-services.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -454,11 +375,11 @@ gitbook.start({
 "text": null
 },
 "history": {
-"link": "https://github.com/bcb420-2020/Bioinfo_Basics/commit/master/03_Bioninfo_databases.Rmd",
+"link": "https://github.com/bcb420-2020/Bioinfo_Basics/commit/master/%s",
 "text": null
 },
 "view": {
-"link": "https://github.com/bcb420-2020/Bioinfo_Basics/blob/master/03_Bioninfo_databases.Rmd",
+"link": "https://github.com/bcb420-2020/Bioinfo_Basics/blob/master/%s",
 "text": null
 },
 "download": ["BCB420_Computational_Systems_Biology_Unit3_Basic_bioinfo.epub"],

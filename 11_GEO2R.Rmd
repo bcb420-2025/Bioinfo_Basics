@@ -1,4 +1,4 @@
-#GEO2R {#geo2r}
+# GEO2R {#geo2r}
 (Programming for analysis of GEO datasets)
 
 ##Overview
